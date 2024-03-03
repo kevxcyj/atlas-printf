@@ -3,7 +3,7 @@
 /**
  * printf_i - printing integers via conversion specifiers i
  * @i: conversion specifier i
- * Return: char
+ * Return: i
  */
 
 int printf_i(va_list i)
