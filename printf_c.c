@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * printf_c - prints character for conversion specifiers
+ * printf_c - prints character for conversion specifier c
  * @c: char arguments
- * description - function to print characters
  * Return: 1
  */
 
