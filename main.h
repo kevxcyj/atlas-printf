@@ -5,11 +5,11 @@
 #include <stdarg.h>
 
 int _printf(const char *format, ...);
-int printf_c(va_list c)
-int printf_i(va_list i)
-int printf_s(va_list s)
-int _strlen(char *str)
-int _strlen_c(const char *str)
+int printf_c(va_list c);
+int printf_i(va_list i);
+int printf_s(va_list s);
+int _strlen(char *str);
+int _strlen_c(const char *str);
 
 
 
