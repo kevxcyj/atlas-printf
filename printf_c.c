@@ -3,6 +3,7 @@
 /**
  * printf_c - prints character for conversion specifiers
  * @c: char arguments
+ * description - function to print characters
  * Return: 1
  */
 
