@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- *
+ * description - this is a our main.h file where we will compile all the files
  * Return: Always 0
  */
 int main(void)
