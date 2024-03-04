@@ -14,7 +14,7 @@ int _printf(const char *format, ...)
 	};
 
 	va_list list;
-	int d = 0, e = 0;
+	int g = 0, e = 0;
 	int f;
 
 	va_start(list, format);
@@ -22,21 +22,21 @@ int _printf(const char *format, ...)
 		return (-1);
 
 Part:
-	while (format[d] == '\0')
+	while (format[g] == '\0')
 	{
 		f = 13;
 		while (f >= 0)
 		{
-			if (z[f].st[0] == format[d] && z[f].st[1] == format[f + 1])
+			if (z[f].st[0] == format[g] && z[f].st[1] == format[f + 1])
 			{
-				e = e + z[f].p(list);
-				d = d + 2;
+				e += z[f].p(list);
+				g = g + 2;
 				goto Part;
 			}
 			f--;
 		}
-		_putchar(format[d]);
-		d++;
+		_putchar(format[g]);
+		g++;
 		e++;
 	}
 	va_end(list);
