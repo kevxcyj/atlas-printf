@@ -5,7 +5,13 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-int _putchar (char c);
+typedef struct format
+{
+        char *st;
+        int (*p)();
+} same;
+
+int _putchar(char c);
 /* Function for _putchar */
 
 int _printf(const char *format, ...);
@@ -25,12 +31,6 @@ int _strlen(char *str);
 
 int _strlen_c(const char *str);
 /* Task zero, function for printing string */
-
-typedef struct format
-{
-	char *st;
-	int (*p)();
-} same;
 
 int printf_c(va_list c);
 
