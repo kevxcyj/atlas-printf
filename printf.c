@@ -29,7 +29,7 @@ Part:
 		{
 			if (z[f].st[0] == format[d] && z[f].st[1] == format[f + 1])
 			{
-				e = e + z[f].p(list);
+				e += z[f].p(list);
 				d = d + 2;
 				goto Part;
 			}

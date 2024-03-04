@@ -9,7 +9,7 @@ typedef struct format
 {
 	char *st;
 	int (*p)();
-} format;
+} same;
 
 int _putchar(char c);
 /* Function for _putchar */
