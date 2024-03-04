@@ -53,7 +53,7 @@ int printf_i(va_list i)
  * Return: d
  */
 
-int printf_d(va_list d)
+int printf_d(va_list i)
 {
 	int a = va_arg(i, int);
 	int b, c = a % 10, digit, exp = 1;
