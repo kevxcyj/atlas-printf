@@ -9,15 +9,15 @@
 int _printf(const char *format, ...)
 {
 	same z[] = {
-		{"%c",printf_c}, {"%s", printf_s},{"%%", print_perc}, {"%d", printf_d}, {"%i", printf_i}
-
+		{"%c",printf_c}, {"%s", printf_s}, {"%%", print_perc}, {"%d", printf_d}, 
+		{"%i", printf_i}
 	};
 
 	va_list list;
 	int d = 0, e = 0;
 	int f;
 
-	va_start (list, format);
+	va_start(list, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
