@@ -1,15 +1,14 @@
 #include "main.h"
 /*
  * _printf - Function that produces output
- *@format: structure
- *
- *Return: 0
+ * @format: structure
+ * Return: integer
  */
 
 int _printf(const char *format, ...)
 {
 	same z[] = {
-		{"%c",printf_c}, {"%s", printf_s}, {"%%", print_perc}, {"%d", printf_d}, 
+		{"%c", printf_c}, {"%s", printf_s}, {"%%", print_perc}, {"%d", printf_d}, 
 		{"%i", printf_i}
 	};
 
@@ -19,12 +18,12 @@ int _printf(const char *format, ...)
 
 	va_start(list, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
-		return (e);
+		return (-1);
 
 Part:
 	while (format[g] == '\0')
 	{
-		f = 13;
+		f = 4;
 		while (f >= 0)
 		{
 			if (z[f].st[0] == format[g] && z[f].st[1] == format[g + 1])
