@@ -44,3 +44,17 @@ int printf_i(va_list i)
 
 	return (i);
 }
+
+
+
+
+#include "main.h"
+/**
+ *
+ *
+ *
+ *
+ *
+ **/
+
+int print_dec(va_list args)
