@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * printf_c - Prints character
+ * printf_c - Prints character.
  * @las: argument
  *
  * Return 1.
- **/
+ */
 
 int printf_c(va_list las)
 {
-	char s;
+	char str;
 
-	s = va_arg(las, int);
-	_putchar(s);
+	str = va_arg(las, int);
+	_putchar(str);
 	return (1);
 }

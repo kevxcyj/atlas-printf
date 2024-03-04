@@ -1,8 +1,9 @@
 #include "main.h"
+
 /*
- * print_% - Prints percent
+ * print_perc - Prints percent
  *
- * Return: 0
+ * Return: int
  */
 
 int print_perc(void)

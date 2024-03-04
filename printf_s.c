@@ -2,17 +2,17 @@
 
 /**
  * printf_s - printing a string
- * @s: s arguments
+ * @s: arguments
  * Return: string of the length
  */
 
-int printf_s(va_list s)
+int printf_s(va_list las)
 {
 	char *str;
 	int a;
 	int b;
 
-	str = va_arg(s, char *);
+	str = va_arg(las, char *);
 	if (str == NULL)
 	{
 		str = "(null)";

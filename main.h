@@ -20,7 +20,7 @@ int _printf(const char *format, ...);
 int printf_c(va_list las);
 /* Task zero, function that prints characters */
 
-int printf_s(va_list s);
+int printf_s(va_list las);
 /* Task zero, function that prints S */
 
 int print_perc(void);
