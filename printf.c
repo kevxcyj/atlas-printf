@@ -3,13 +3,13 @@
  * _printf - Function that produces output
  *@format: structure
  *
- *Return: 0
+ *Return: the structure
  */
 
 int _printf(const char *format, ...)
 {
 	same z[] = {
-		{"%c",printf_c}, {"%s", printf_s}, {"%%", print_perc}, {"%d", printf_d}, 
+		{"%c", printf_c}, {"%s", printf_s}, {"%%", print_perc}, {"%d", printf_d},
 		{"%i", printf_i}
 	};
 
