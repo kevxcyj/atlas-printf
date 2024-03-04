@@ -32,8 +32,6 @@ int _strlen(char *str);
 int _strlen_c(const char *str);
 /* Task zero, function for printing string */
 
-int printf_c(va_list c);
-
 int printf_i(va_list i);
 /* Task one, function for conversion specifier i */
 
