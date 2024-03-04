@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * printf_char - Prints character
+ * printf_c - Prints character
  * @las: argument
  *
  * Return 1.
