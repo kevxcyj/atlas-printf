@@ -2,7 +2,7 @@
 
 /**
  * printf_s - printing a string
- * @s: arguments
+ * @las: arguments
  * Return: string of the length
  */
 
