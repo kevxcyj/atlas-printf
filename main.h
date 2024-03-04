@@ -10,9 +10,10 @@ int _putchar (char c);
 int _printf(const char *format, ...);
 /* Task zero, a function that produces output according to a format */
 
-int printf_char(va_list las)
+int printf_c(va_list las)
 /* Task zero, function that prints characters */
 
+int printf_str(va_list val)
 
 int printf_c(va_list c);
 
@@ -22,8 +23,10 @@ int printf_i(va_list i);
 int printf_s(va_list s);
 
 int _strlen(char *str);
+/* Task zero, function for printing string */
 
 int _strlen_c(const char *str);
+/* Task zero, function for printing string */
 
 
 

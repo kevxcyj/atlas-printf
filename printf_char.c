@@ -7,7 +7,7 @@
  * Return 1.
  **/
 
-int printf_char(va_list las)
+int printf_c(va_list las)
 {
 	char s;
 
