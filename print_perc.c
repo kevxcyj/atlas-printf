@@ -5,7 +5,7 @@
  * Return: 0
  */
 
-int print_%(void)
+int print_perc(void)
 {
 	_putchar(37);
 	return (1);
