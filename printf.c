@@ -27,7 +27,7 @@ Part:
 		f = 13;
 		while (f >= 0)
 		{
-			if (z[f].st[0] == format[g] && z[f].st[1] == format[f + 1])
+			if (z[f].st[0] == format[g] && z[f].st[1] == format[g + 1])
 			{
 				e += z[f].p(list);
 				g = g + 2;
