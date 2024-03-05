@@ -9,7 +9,4 @@
 int _printf(const char *format, ...);
 /* Task zero, a function that produces output according to a format */
 
-int binary(int num);
-int octal(int num);
-
 #endif
