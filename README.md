@@ -38,7 +38,7 @@ return 0;
 
 
 # SEE ALSO
-_printf.c, _putchar.c
+_printf.c, main.c
 
 # AUTHOR
 
