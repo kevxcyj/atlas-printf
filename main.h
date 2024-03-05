@@ -6,12 +6,6 @@
 #include <unistd.h>
 #include <string.h>
 
-typedef struct format
-{
-	char *st;
-	int (*p)();
-} same;
-
 int _putchar(char c);
 /* Function for _putchar */
 
@@ -37,12 +31,8 @@ int printf_i(va_list i);
 /* Task one, function for conversion specifier i */
 
 int printf_d(va_list i);
-
 int binary(int num);
 int octal(int num);
-
-
-
 
 
 #endif
