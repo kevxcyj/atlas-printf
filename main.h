@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <unistd.h>
+#include <string.h>
 
 typedef struct format
 {
@@ -37,7 +38,8 @@ int printf_i(va_list i);
 
 int printf_d(va_list i);
 
-
+int binary(int num);
+int octal(int num);
 
 
 

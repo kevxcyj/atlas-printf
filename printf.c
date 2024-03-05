@@ -5,7 +5,7 @@
  * Return: integer
  */
 
-int _printf(const char *format, ...)
+//int printf(const char *format, ...)
 {
 	same z[] = {
 		{"%c", printf_c}, {"%s", printf_s}, {"%%", print_perc}, {"%d", printf_d}, 
