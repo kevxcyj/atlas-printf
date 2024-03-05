@@ -8,42 +8,42 @@
 
 int _printf(const char *format, ...)
 {
-	int a = 0;
+	int a = 0; /* initializes variable a so it can keep track of the characters being printed */
 
-	va_list list;
+	va_list list; /* declaring va_list named list to have access to variable arguments */
 	
-	if(format == NULL)
+	if(format == NULL) /* checks if format is NULL, if so then it returns an error */
 		return (1);
 	
-	va_start(list, format);
+	va_start(list, format); 
 
-	while(*format)
+	while(*format) /* loop that iterates through character in the format string */
 	{
-		if(*format != '%')
+		if(*format != '%') /* if character in format string is not a % then it prints the character and increments a */
 		{
-			write(1, format, 1);
+			write(1, format, 1); /* write characters to the standard output */
 			a++;
 		}
-		else
+		else /* if the character is a % sign */
 		{
-			format++;
+			format++; /* checks the next char and then breaks our of loop */
 			if (*format == '\0')
 				break;
 
-			if (*format == '%')
+			if (*format == '%') /* conversion specifier % */
 			{
 				write(1, format, 1);
 				a++;
 			}
-			else if (*format == 'c')
+			else if (*format == 'c') /* conversion specifier c */
 			{
 				char c = va_arg(list, int);
 				write(1, &c, 1);
 				a++;
 			}
-			else if (*format == 's')
+			else if (*format == 's') /* conversion specifier s */
 			{
-				char *str = va_arg(list, char*);
+				char *str = va_arg(list, char*); /* calculate the length of the string and prints */
 				int str_len = 0;
 
 				while (str[str_len] != '\0')
@@ -53,9 +53,9 @@ int _printf(const char *format, ...)
 				a += str_len;
 			}
 		}
-		format++;
+		format++; /* loop keeps going until it ends */
 	}
-	va_end(list);
+	va_end(list); /* closing and ending arguments */
 
-	return a;
+	return a; /* returning characters */
 }
