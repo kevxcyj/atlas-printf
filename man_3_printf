@@ -1,1 +1,51 @@
-Create a man page for your function.
+_PRINTF "MARCH 2024" "Atlas Printf Partner Project" 
+
+
+.SH NAME
+_printf - Printf function
+
+
+.SH SYNOPSIS
+#include "main.h"
+
+int _printf(const char *format, ...)
+
+
+.SH DESCRIPTION
+_printf function produces an output according to a format.The function produces the output by running the "_printf.c" file. The function contains the following specifiers:
+%d - decimal
+%c - character
+%s - string
+%i - integer
+%% - percent
+
+Using these, it outputs the given strings.
+
+
+.SH EXAMPLES
+An example of the _printf function
+
+#include <stdio.h>
+#include "main.h"
+
+int main(void)
+{
+	int i;
+	i = _printf("Man Page");
+return 0;
+}
+
+
+.SH SEE ALSO
+_printf.c, _putchar.c
+
+
+.SH BUGS
+
+No known bugs.
+
+
+.SH AUTHOR
+
+Kevin Cyrus Jr, LJ Thao
+
