@@ -37,7 +37,7 @@ int _printf(const char *format, ...)
 			}
 			else if (*format == 'c')
 			{
-				char c = vag_arg{list, int};
+				char c = va_arg(list, int);
 				write(1, &c, 1);
 				a++;
 			}
