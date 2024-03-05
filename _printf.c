@@ -52,31 +52,6 @@ int _printf(const char *format, ...)
 				write(1, str, str_len);
 				a += str_len;
 			}
-			else if (*format == 'd' || *format == 'i')
-			{
-				int num = va_arg(list, int);
-				char str[20];
-				int len = 0;
-
-				if (num < 0)
-				{
-					write(1, "-", 1);
-					a++;
-					num = -num;
-				}
-				do
-				{
-					str[len++] = '0' + num % 10;
-					num /= 10;
-				}
-				while (num != 0);
-
-				for (int i = len - 1; i >= 0; i--)
-				{
-					write(1, &str[i], 1);
-					a++;
-				}
-			}
 		}
 		format++;
 	}
