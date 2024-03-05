@@ -37,7 +37,7 @@ return 0;
 
 
 .SH SEE ALSO
-_printf.c, _putchar.c
+_printf.c, main.c
 
 
 .SH BUGS
